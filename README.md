@@ -1,13 +1,33 @@
-# Automatizacao-de-login-bootcamp-Qazando-
+## 🔐 Test Automation - Login Suite (Cypress)
 
-Objetivo do Projeto
-Validar a segurança e a usabilidade da tela de login do site Automation Practice.
+## 📝 Sobre o Projeto
+Este repositório contém a automação de testes para o fluxo de autenticação da plataforma Automationpratice. O foco principal foi garantir a segurança e a integridade da experiência do usuário, validando desde o acesso bem-sucedido até o tratamento de erros críticos no formulário de login.
 
- Cenários Testados
-Login com sucesso: Verifica se o usuário consegue acessar o sistema com dados válidos.
+O projeto utiliza Cypress para realizar testes de ponta a ponta (E2E), garantindo que as mensagens de feedback do sistema estejam corretas e acessíveis.
 
-Senha incorreta: Valida a mensagem de erro ao inserir credenciais erradas.
+## 🕹️ Cenários de Teste Implementados
+A suíte de testes cobre os seguintes comportamentos:
 
-E-mail inválido: Garante que o sistema identifica formatos de e-mail fora do padrão.
+Login com Sucesso: Valida a entrada com credenciais válidas e confirma se o alerta de "Login realizado" é exibido.
 
-Campos vazios: Testa a obrigatoriedade do preenchimento dos campos antes do envio.
+Senha Incorreta: Verifica se o sistema bloqueia o acesso e exibe a mensagem de erro "Senha inválida" ao usar uma senha curta ou errada.
+
+E-mail Inválido: Testa o comportamento do campo de usuário ao receber formatos de dados inesperados (ex: números ou e-mails sem formatação).
+
+Campos Vazios: Garante que o sistema impede o envio do formulário sem preenchimento, exibindo a validação de "E-mail inválido".
+
+## 🛠️ Tecnologias Utilizadas
+Cypress: Framework de automação para testes rápidos e estáveis no navegador.
+
+JavaScript (ES6): Linguagem utilizada para criar os scripts de automação.
+
+Chai: Biblioteca de asserções para validar os textos e elementos na tela (should('have.text', ...)).
+
+## 📁 Estrutura de Arquivos
+Conforme a imagem do repositório, a organização segue o padrão:
+
+cypress/e2e/login.cy.js: Contém todos os casos de teste de login.
+
+cypress.config.js: Arquivo de configuração principal do framework.
+
+package.json: Gerenciamento de scripts e dependências do projeto.
