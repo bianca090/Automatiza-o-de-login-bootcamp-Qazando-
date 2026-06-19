@@ -1,5 +1,11 @@
 ## 🔐 Test Automation - Login Suite (Cypress)
 
+<div align="center">
+  <img src=" https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white" alt="Cypress" />
+  <img src="https://img.shields.io/badge/Quality%20Assurance-008080?style=for-the-badge&logo=checkmarx&logoColor=white" alt="QA" />
+</div>
+
 ## 📝 Sobre o Projeto
 Este repositório contém a automação de testes para o fluxo de autenticação da plataforma Automationpratice. O foco principal foi garantir a segurança e a integridade da experiência do usuário, validando desde o acesso bem-sucedido até o tratamento de erros críticos no formulário de login.
 
